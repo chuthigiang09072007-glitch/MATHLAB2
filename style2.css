@@ -1,0 +1,117 @@
+body{
+    background-image: url("nền\ kh.png");
+}
+.pixel-title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    color: #c5ddec;
+
+    /* Bóng pixel */
+    text-shadow:
+        4px 4px 0 #789ab6,
+        8px 8px 0 #38536b,
+        10px 10px 0 #263f54;
+
+    margin-top: 50px;
+}
+.pixel-title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    color: #c5ddec;
+
+    text-shadow:
+        4px 4px 0 #789ab6,
+        8px 8px 0 #38536b,
+        10px 10px 0 #263f54;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+/* NÚT PIXEL */
+.pixel-btn {
+    width: 320px;
+    height: 90px;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #38566e;
+
+    background: linear-gradient(
+        to bottom,
+        #c5ddec 0%,
+        #a9c8df 20%,
+        #91b5d0 50%,
+        #789ab6 80%,
+        #6687a3 100%
+    );
+
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    /* Viền sáng tối */
+    box-shadow:
+        inset 6px 6px 0 #d3e7f3,
+        inset -6px -6px 0 #587995,
+        0 8px 0 #38536b,
+        0 12px 0 #263f54;
+
+    /* Góc pixel */
+    clip-path: polygon(
+        10px 0,
+        calc(100% - 10px) 0,
+        calc(100% - 10px) 10px,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        10px calc(100% - 10px),
+        0 calc(100% - 10px),
+        0 10px,
+        10px 10px
+    );
+
+    transition: transform 0.1s, filter 0.1s;
+}
+
+/* DI CHUỘT */
+.pixel-btn:hover {
+    filter: brightness(1.15);
+}
+
+/* NHẤN NÚT */
+.pixel-btn:active {
+    transform: translateY(8px);
+
+    box-shadow:
+        inset 6px 6px 0 #d3e7f3,
+        inset -6px -6px 0 #587995,
+        0 2px 0 #38536b;
+}
+body{
+    font-family: 'Pixelify Sans';
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #38566e; 
+}
